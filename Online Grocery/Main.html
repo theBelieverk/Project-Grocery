@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+   <link rel="stylesheet"  href="GroceryDesign.css">
+    <title> Online Grocery </title>
+    </head>
+  <body onload="slider()">
+    <header class="topbar">
+  <div class="container">
+    <div class="social">
+      <a href="https://www.facebook.com/groups/318186379120117/" class="facebook" style="color:#ede6e6; font-weight:bold;"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="twitter" style="color:#ede6e6; font-weight:bold;"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="insta" style="color:#ede6e6; font-weight:bold;"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="google" style="color:#ede6e6; font-weight:bold;"><i class="fab fa-google"></i></a>
+    </div>  
+    <div class="loginout"> 
+      <a href="login3.jsp" class="login" style="color:#ede6e6; font-weight:bold;"><i class="fa fa-user" >Log In</i></a>
+      <a href="#" class="logout" style="color:#ede6e6; font-weight:bold;"><i class="fa fa-sign-out-alt" >Log Out</i></a>
+    </div>  
+  </div>
+  <!----main bar--->
+</header>
+ <header class="main">
+     <div class="container-fluid flex justify-center">
+      <a href="#" class="active">Home</a>
+      <a href="site.html">Product</a> 
+      <a href="#">Shop</a> 
+      <a href="#Services-Info">Service</a> 
+      <a href="#contact-info">Contact us </a>
+     </div>
+</header>
+<div class="banner">
+  <div class="slider">
+    <img src="bakery.jpg" id="slideImg">
+  </div>
+  <div class="overlay">
+      <div class="content">
+        <h1>Online Grocery</h1>
+        <h3> Welcome..</h3>
+        <button type="button" >WATCH MORE</button>
+        <button class="btn2" type="button">SHOP NOW</button>
+      </div>
+  </div>
+</div>
+<script>
+  var slideImg = document.getElementById("slideImg");
+  var images = new Array(
+    "fruit.jpg",
+    "rice.jpg",
+    "sea.jpg",
+    "vegetable.jpg"
+    );
+  var len = images.length;
+  var i =0;
+  function slider(){
+    if(i>len-1){
+      i=0;
+    }
+    slideImg.src = images[i];
+    i++;
+    setTimeout('slider()',3000);
+  }  
+</script>
+
+<!----top Product---->
+<section class="top-product">
+    <div class="container-fluid">
+      <h1 class="section-heading">Top Product</h1>
+    </div>
+</section>
+<div class="carousel">
+    <div class="carousel__container">
+      <div class="carousel-item">
+        <img class="carousel-item__img" src="10.png">
+        <div class="Buy-product">
+        <a href="" class="buy-btn">Buy Now</a>
+        </div>
+        <div class="info">
+          <a><h3 style="font-weight: bold;">Fortune Oil <br>(fresh oil 1Lit)</h3></a>
+          <div class="stars">
+            <i class="fa fa-star"></i>&nbsp;&nbsp;(4.5/5)
+          </div>
+          <strong class="price"> <span class="mrp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1200/-</span>&nbsp;&nbsp;700/-</strong>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="carousel-item__img" src="51.jpg">
+        <div class="Buy-product">
+        <a href="login3.jsp" class="buy-btn">Buy Now</a>
+        </div>
+        <div class="info">
+          <a><h3 style="font-weight: bold;">Arial <br>(In Stock 1KG)</h3></a>
+          <div class="stars">
+            <i class="fa fa-star"></i>&nbsp;&nbsp;(4.5/5)
+          </div>
+          <strong class="price"> <span class="mrp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1200/-</span>&nbsp;&nbsp;700/-</strong>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="carousel-item__img" src="52.jpg">
+        <div class="Buy-product">
+        <a href="login3.jsp"  class="buy-btn">Buy Now</a>
+        </div>
+        <div class="info">
+          <a><h3 style="font-weight: bold;">Wheat Powder <br>(Chakki Fresh Atta 1KG)</h3></a>
+          <div class="stars">
+            <i class="fa fa-star"></i>&nbsp;&nbsp;(4.5/5)
+          </div>
+          <strong class="price"> <span class="mrp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1200/-</span>&nbsp;&nbsp;700/-</strong>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="carousel-item__img" src="53.jpg">
+        <div class="Buy-product">
+        <a href="login3.jsp" class="buy-btn">Buy Now</a>
+        </div>
+        <div class="info">
+          <a><h3 style="font-weight: bold;">Rice <br>(Bramati Chaval 1KG)</h3></a>
+          <div class="stars">
+            <i class="fa fa-star"></i>&nbsp;&nbsp;(4.5/5)
+          </div>
+          <strong class="price"> <span class="mrp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1200/-</span>&nbsp;&nbsp;700/-</strong>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="carousel-item__img" src="54.jpg">
+        <div class="Buy-product">
+        <a href="login3.jsp" class="buy-btn">Buy Now</a>
+        </div>
+        <div class="info">
+          <a><h3 style="font-weight: bold;">Garam Masala <br>(Suhana 1KG)</h3></a>
+          <div class="stars">
+            <i class="fa fa-star"></i>&nbsp;&nbsp;(4.5/5)
+          </div>
+          <strong class="price"> <span class="mrp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1200/-</span>&nbsp;&nbsp;700/-</strong>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="carousel-item__img" src="5006.jfif">
+        <div class="Buy-product">
+        <a href="login3.jsp" class="buy-btn">Buy Now</a>
+        </div>
+        <div class="info">
+          <a><h3 style="font-weight: bold;">Toor Dal <br>(Sahyadri 1KG)</h3></a>
+          <div class="stars">
+            <i class="fa fa-star"></i>&nbsp;&nbsp;(4.5/5)
+          </div>
+          <strong class="price"> <span class="mrp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1200/-</span>&nbsp;&nbsp;700/-</strong>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img class="carousel-item__img" src="5001.jfif">
+        <div class="Buy-product">
+        <a href="login3.jsp"class="buy-btn">Buy Now</a>
+        </div>
+        <div class="info">
+          <a><h3 style="font-weight: bold;">Halad Powder <br>(Ambari 1KG)</h3></a>
+          <div class="stars">
+            <i class="fa fa-star"></i>&nbsp;&nbsp;(4.5/5)
+          </div>
+          <strong class="price"> <span class="mrp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1200/-</span>&nbsp;&nbsp;700/-</strong>
+        </div>
+      </div>
+        <div class="carousel-item">
+        <img class="carousel-item__img" src="5007.jfif">
+        <div class="Buy-product">
+        <a href="login3.jsp" class="buy-btn">Buy Now</a>
+        </div>
+      
+        <div class="info">
+          <a><h3 style="font-weight: bold;">Salt <br>(TATA 1KG)</h3></a>
+          <div class="stars">
+            <i class="fa fa-star"></i>&nbsp;&nbsp;(4.5/5)
+          </div>
+          <strong class="price"> <span class="mrp">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1200/-</span>&nbsp;&nbsp;700/-</strong>
+        </div>
+      </div>
+     </div>
+     <button class="buy-btn flex justify-center"><a href="site.html">VIEW MORE</a></button>
+    
+  </div>
+<section class="abt-meal">
+  <div class="container">
+    <h1 class="section-heading">About Fresh Meal</h1>
+      <div class="abt-meal-wrap flex" style="padding-top: 3rem;">
+        <div>
+          <img src="fresh-meal.jpg">
+        </div>
+          <div>
+            <h2 style="font-weight: bold;padding-bottom: 2rem;
+            " >Eat a balanced and varied diet</h2>
+            <p style="font-weight: 400;">In times of uncertainty, it is normal to feel anxious, sad, stressed and scared. Maintaining a normal daily routine can help manage some of this <kbd>stress</kbd>. One way we can do this is by sticking to regular mealtimes and planning meals in advance. This can help us better control hunger levels, meet our nutrient requirements and allow us to get the most out of the food we have, reducing food waste.<br>
+            Simply put, there are no foods or supplements that can ‘boost’ our immune system and prevent or treat <kbd>COVID-19</kbd>. <br>Nevertheless, eating a well-balanced diet, with plenty of <kbd>fruits</kbd> and <kbd>vegetables</kbd>, whole grains, plant and animal proteins and healthy fats is the best way to get all the essential nutrients we need for good health and normal immune function.</p>
+            <button>Read More</button>
+          </div>
+      </div>
+  </div>
+</section>
+<section  class="our-service" id="Services-Info">
+  <div class="container" style="padding-top:5rem;">
+<h1 class="section-heading">Our Services</h1>
+</div>
+</section>
+<section class="service" >
+  <div class="container">
+<div class="card-wrapper flex">
+   <div class="service-card ">
+     <img class="icon" src="home-delivery.jpg">
+     <h2>Free Home Delivery</h2>
+     <p><kbd>Delivery </kbd> is the process of transporting goods from a source<kbd> location </kbd> to a predefined destination. ... Sometimes home delivery of supermarket goods is possible. ...</p>
+     <button >Read More</button>
+   </div>
+   <div class="service-card ">
+     <img class="icon" src="refund.jpg">
+     <h2 style="color:orange;">30 Days Return Services</h2>
+     <P>“We couldn't be happier with Happy <kbd>Returns</kbd> online return and exchange service.<br> Our customers love it. <br> Our net return rate is <kbd>down</kbd>.</P>
+     <button>Read More</button>
+   </div>
+   <div class="service-card ">
+     <img class="icon" src="moneyback.jpg">
+     <h2>Money Back Guaranted</h2>
+     <P>Offering your customers a full<kbd> refund </kbd> if they aren't satisfied with your products is an indication of quality. Or rather, your confidence in the <kbd> quality </kbd> of your product.</P>
+     <button>Read More</button>
+   </div>
+ </div>
+
+  </div>
+</section>
+ <!---- letest News Content--->
+<section class="latest-news">
+   <h1 class="section-heading">Latest News from Blog</h1>
+  <div class="container">
+       
+        <div class="artical-wrapper flex justify-center">
+          <article class="card">
+          <div>
+            <img src="coff1.jpeg">
+          </div> 
+          <div class="card-content">
+            <div class="post-meta flex">
+              <span>April 02,2021</span>
+              <div>
+              <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Life happens. Coffee helps.</span>
+              <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12 comment</span>
+            </div>
+            </div>  
+            <h2>My blood type is coffee </h2> 
+            <p>Not all who wander are lost. They're just looking for coffee.</p>     
+          </div>
+          </article>
+           <article class="card">
+          <div>
+            <img src="ca1.jpeg">
+          </div> 
+          <div class="card-content">
+            <div class="post-meta flex">
+              <span>April 02,2021</span>
+              <div>
+              <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.....Life is fun, eat it up .....!!!!!!.</span>
+              <span>&nbsp;&nbsp;&nbsp;12 comment</span>
+            </div>
+            </div>   
+            <h2>Bring on the cake!</h2> 
+            <p>A great empire, like a great cake, is most easily diminished.</p>     
+          </div>
+          </article>
+        </div> 
+       <div class="btn flex justify-center">
+         <button>View All</button>
+       </div>
+  </div>
+  </section>
+  <!---- contact us Content--->
+  <section class="contact-us flex" id="contact-info">
+  <div class="contact-info-wrapper ">
+    <h1 class="section-heading">Contact Us</h1>
+    <div class="contact-info flex">
+      <div>
+        <div>
+         <i class="fa fa-phone-volume">&nbsp;&nbsp;&nbsp;Call Us:</i>
+          <div>
+            <span></span>
+            <span>(+84) 120 670 45</span>
+          </div>
+        </div>
+        <div>
+          <i class="fa fa-envelope">&nbsp;&nbsp;&nbsp;E-mail:</i>
+          <div>
+            <span></span>
+            <span>grocery123@gmail.com</span>
+          </div>
+        </div>
+        <div>
+          <i class="fa fa-hourglass-half">&nbsp;&nbsp;Working Hours:</i>
+          <div>
+            <span></span>
+            <span>Mon-Sat(8.00am-12.00am)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d232565.37345982718!2d54.418535885052684!3d24.38707886087034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e440f723ef2b9%3A0xc7cc2e9341971108!2sAbu%20Dhabi%20-%20United%20Arab%20Emirates!5e0!3m2!1sen!2sin!4v1618848595060!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
+</section>
+ <!----footer Content--->
+<footer>
+  <div class="footer-content">
+    <h3>Online Grocery Store</h3>
+    <p>At Fresh Market, we value our customers so much that we have engrained our customer service into our core values.</p>
+    <ul class="social flex">
+      <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fab fa-google"></i></a></li>
+      <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+    </ul>
+  </div>  
+<div class="footer-bottom">
+  <p>copyright &copy;2021 codeOpacity. designed by <span>Kiran Murkute</span></p>
+</div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+</head>
+
+<!-- css file -->
+<link rel="stylesheet" href="site.css">
+
+ <!-- font awesome icon -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body>
+    <nav>
+        <div class="nav-responsive">
+            <i class="fa fa-home fa-3x" id="logo"></i>
+             <div class="container-fluid flex justify-center">
+                  <a href="#vegetable" class="active">Vegetables</a>
+                  <a href="#grain">Grains</a> 
+                  <a href="#meat">Meat</a> 
+                  <a href="#fruit">Fruits</a> 
+                  <a href="#kg">Kitchen Grocery </a>
+                 </div>
+          <!---      <img src="home.jpg" alt="image" class="logo" id="logo">
+            <div class="nav-search">
+                <a href="">
+                    <i class="fa fa-search" id="find">
+                    </i>
+                </a>
+                <input type="text" id="search" placeholder="Search your items, brands">
+            </div>--->
+            <div class="access">
+                <!--<a href="#" id="notification"><i class="fa fa-bell"></i></a>-->
+                <a href="#" id="cart"><i class="fa fa-shopping-cart fa-2x"></i></a>
+
+               <!--- <a href="#" id="bars"><i class="fa fa-bars"></i></a>
+                <a href="#" id="account"><i class="fa fa-user-circle-o"></i></a>-->
+            </div>
+        </div>      
+    </nav>
+
+<!-- main section -->
+<main id="main" >
+    <!-- categories section -->
+   <!-- <section id="categories">
+        <div class="brand">
+            <div class="img-container">
+                <img src="redmi note 8C.jpg" alt="img" class="brand-img">
+            </div>
+            <h4 id="brand-name">Xiaomi</h4>
+        </div>
+        <div class="brand">
+            <div class="img-container">
+                <img src="realmeX20pro.jpg" alt="img" class="brand-img">
+            </div>
+            <h4 id="brand-name">Realme</h4>
+        </div>
+        <div class="brand">
+            <div class="img-container">
+                <img src="vivo1.jpg" alt="img" class="brand-img">
+            </div>
+            <h4 id="brand-name">Oppo</h4>
+        </div>
+        <div class="brand">
+            <div class="img-container">
+                <img src="samGalaxynote20.jpg" alt="img" class="brand-img">
+            </div>
+            <h4 id="brand-name">Samsung</h4>
+        </div>
+        <div class="brand">
+            <div class="img-container">
+                <img src="iphone1.jpeg" alt="img" class="brand-img">
+            </div>
+            <h4 id="brand-name">iPhone</h4>
+        </div>
+        <div class="brand">
+            <div class="img-container">
+                <img src="nokia.jpeg" alt="img" class="brand-img">
+            </div>
+            <h4 id="brand-name">Nokia</h4>
+        </div>
+    </section>-->
+<!-- end of categories section -->
+
+<!-- all categories -->
+<section class="categories" id="vegetable">
+    <div class="title-container">
+        <h1 id="title">Vegetables</h1>
+        <button type="button" id="item-btn">View All</button>
+    </div>
+    <div class="card">
+        <div class="item-container" id="0">
+            <div class="card-item">
+                <img src="carrot.jpg" alt="img" id="card-img">
+                 <h3>Carrot</h3>
+                <p id="item-name">Food & Nutrition Magazine <br>Carrots: Tracing this Vegetable's Roots | Food & Nutrition Magazi</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : 30/- 1KG</h3>               
+        </div>
+
+        <div class="item-container" id="1">
+            <div class="card-item" >
+                <img src="broccoli.jfif" alt="img" id="card-img">
+                 <h3>Broccoli</h3>
+                <p id="item-name"> Broccoli is a green vegetable that <br> aguely resembles <br> a miniature tree.</p>              
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price :30/- 1KG</h3>
+        </div>
+
+        <div class="item-container" id="2">
+            <div class="card-item" >
+                <img src=" pepper.jfif" alt="img" id="card-img">
+                 <h3>Green Pepper</h3>
+                <p id="item-name">Green peppers are one of the most savory <br> types of sweet bell <br> peppers.</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price :30/- 1KG</h3>                
+        </div>
+
+        <div class="item-container" id="3">
+            <div class="card-item">
+                <img src="eggplant.jpg" alt="img" id="card-img">
+                 <h3>Eggplant</h3>
+                <p id="item-name">The eggplant is a nightshade vegetable, <br> like potatoes, <br> tomatoes, and peppers. </p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : 30/- 1KG</h3>            
+        </div>
+    </div>
+</section>
+
+<!-- Grains -->
+<section class="categories" id="grain">
+    <div class="title-container">
+        <h1 id="title">Grains</h1>
+        <button type="button" id="item-btn">View All</button>
+    </div>
+    <div class="card">
+
+        <div class="item-container" id="4">
+            <div class="card-item">
+                <img src="indrayni.jfif" alt="img" id="card-img">
+                 <h3>Indrayni Rice</h3>
+                <p id="item-name">We supply pure Indrayani Rice without polish contain all vitamins ,<br> healthy nutrients y.</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price: 45/- 1KG</h3>            
+        </div>
+
+        <div class="item-container"  id="5">
+            <div class="card-item">
+                <img src="teff.jfif" alt="img" id="card-img">
+                 <h3>Teff</h3>
+                <p id="item-name">Teff is a fine grain—about the size of a poppy seed—that comes in a <br> variety of colors, from white and red to dark brown.</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : 45/- 1KG</h3>            
+        </div>
+
+        <div class="item-container"  id="6">
+
+            <div class="card-item">
+                <img src="Sorghum.jfif" alt="img" id="card-img">
+                 <h3>Sorghum</h3>
+                <p id="item-name">Sorghum is a genus of about 25 species of flowering <br> plants <br> in the grass family Poaceae.</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : 45/- 1KG</h3>            
+        </div>
+
+        <div class="item-container" id="7">
+            <div class="card-item">
+                <img src="wheat.jfif" alt="img" id="card-img">
+                <h3>Wheat</h3>
+                <p id="item-name">Wheat is a grass widely cultivated for its seed, <br> a cereal grain <br> which is a worldwide staple food</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : 45/- 1KG</h3>            
+        </div>
+    </div>
+</section>
+<!-- end of Grains -->
+
+<!--Meat  -->
+<section class="categories" id="meat">
+    <div class="title-container">
+        <h1 id="title">Meat</h1>
+        <button type="button" id="item-btn">View All</button>
+    </div>
+    <div class="card">
+
+        <div class="item-container" id="8">
+            <div class="card-item">
+                <img src="Poultry.jfif" alt="img" id="card-img">
+                   <h3>Poultry Meat</h3>
+                <p id="item-name">Meat is animal tissue used as food. Most often is used to describe <br> skeletal muscle and fat that is found with it.</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price :180/- 1KG</h3>            
+        </div>
+
+        <div class="item-container" id="9">
+
+            <div class="card-item">
+                <img src="Turkey.png" alt="img" id="card-img">
+                   <h3>Turkey Meat</h3>
+                <p id="item-name">Meat is animal tissue used as food. Most often is used to describe <br> skeletal muscle and fat that is found with it.</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price :210/- 1KG</h3>            
+        </div>
+
+        <div class="item-container" id="10">
+
+            <div class="card-item">
+                <img src="fish.jpeg" alt="img" id="card-img">
+                   <h3>Fish Meat</h3>
+                <p id="item-name">Meat is animal tissue used as food. Most often is used to describe <br> skeletal muscle and fat that is found with it.</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price :310/- 1KG</h3>            
+        </div>
+
+        <div class="item-container" id="11">
+
+            <div class="card-item">
+                <img src="meat.jfif" alt="img" id="card-img">
+                   <h3>Meat</h3>
+                <p id="item-name">Meat is animal tissue used as food. Most often is used to describe <br> skeletal muscle and fat that is found with it.</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price :180/- 1KG</h3>            
+        </div>
+    </div>
+</section>
+<!-- end of Meat -->
+
+<!-- Fruits -->
+<section class="categories" id="fruit">
+    <div class="title-container">
+        <h1 id="title">Fruits</h1>
+        <button type="button" id="item-btn">View All</button>
+    </div>
+    <div class="card" >
+
+        <div class="item-container" id="12">
+            <div class="card-item">
+                <img src="apple.jfif" alt="img" id="card-img">
+                <h3>Apple</h3>
+                <p id="item-name">Fruits are an excellent source of essential vitamins and minerals, <br> and they are high in fiber.</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : 100/- 1KG</h3>            
+        </div>
+
+        <div class="item-container" id="13">
+            <div class="card-item">
+                <img src="mango.jfif" alt="img" id="card-img">
+                <h3>Mango</h3>
+                <p id="item-name">Fruits are an excellent source of essential vitamins and minerals, <br> and they are high in fiber.</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : 100/- 1KG</h3>            
+        </div>
+
+        <div class="item-container" id="14">
+            <div class="card-item">
+                <img src="watermelan.jfif" alt="img" id="card-img">
+                <h3>Watermelon</h3>
+                <p id="item-name">Fruits are an excellent source of essential vitamins and minerals, <br> and they are high in fiber.</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : 100/- 1KG</h3>            
+        </div>
+
+        <div class="item-container" id="15">
+            <div class="card-item">
+                <img src="grapes.jfif" alt="img" id="card-img">
+                <h3>Grapes</h3>
+                <p id="item-name">Fruits are an excellent source of essential vitamins and minerals, <br> and they are high in fiber.</p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : 100/- 1KG</h3>            
+        </div>
+    </div>
+</section>
+<!-- end of fruits -->
+
+<!-- Kitchen Grocery  -->
+<section class="categories" id="kg">
+    <div class="title-container">
+        <h1 id="title">Kichen Grocery</h1>
+        <button type="button" id="item-btn">View All</button>
+    </div>
+    <div class="card">
+
+        <div class="item-container" id="16">
+
+            <div class="card-item">
+                <img src="jeera.jpg" alt="img" id="card-img">
+                    <h3>Jeera</h3>
+                <p id="item-name">Online shopping for Grocery & Gourmet Foods from a great selection of Mixed Spices & Seasonings.  </p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : 90/- 1KG</h3>            
+        </div>
+
+        <div class="item-container" id="17">
+            <div class="card-item">
+                <img src="black-pepper.jfif" alt="img" id="card-img">
+                    <h3>Black-Pepper</h3>
+                <p id="item-name">Online shopping for Grocery & Gourmet Foods from a great selection of Mixed Spices & Seasonings.   </p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : 90/- 1KG</h3>            
+        </div>
+
+        <div class="item-container" id="18">
+            <div class="card-item">
+                <img src="ginger-powder.jpg" alt="img" id="card-img">
+                 <h3>Ginger-Powder</h3>
+                <p id="item-name">Online shopping for Grocery & Gourmet Foods from a great selection of Mixed Spices & Seasonings.  </p>
+            </div>
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : 90/- 1KG</h3>            
+        </div>
+
+        <div class="item-container" id="19">
+            <div class="card-item">
+                <img src="mustard.jpg" alt="img" id="card-img">
+                                    <h3>Grapes</h3>
+                <p id="item-name">Online shopping for Grocery & Gourmet Foods from a great selection of Mixed Spices & Seasonings. </p>
+            </div> 
+            <i class="fa fa-shopping-cart" id="add-to-cart"></i>
+            <h3 id="item-price">Price : 90/- 1KG</h3>            
+        </div>
+    </div>
+</section>
+<!-- end of kitchen Grocery-->
+
+<!-- Footer section -->
+  <!---  <footer>
+        <p id="footer-title">our support team</h3p>
+        <div class="footer">
+            <div class="support">
+                <ul>
+                    <h3>Know About Us</h3>
+                    <li><a href="#" id="about">Know Us</a></li>
+                    <li><a href="#" id="Refund-policy">Refund Policy</a></li>
+                    <li><a href="#" id="policy">Our Policy</a></li>
+                    <li><a href="#" id="return-product">How to Return ?</a></li>
+                    <li><a href="#" id="terms">Term & Conditios</a></li>
+                    <li><a href="#" id="privacy">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="social-media">
+
+                <ul>
+                    <h3>Contact Us</h3>
+                    <li><i class="fa fa-facebook"></i><a href="#" id="facebook">Facebook</a></li>
+                    <li><i class="fa fa-twitter"></i><a href="#" id="twitter">Twitter</a></li>
+                    <li><i class="fa fa-instagram"></i><a href="#" id="facebook">Instagram</a></li>
+                    <li><i class="fa fa-telegram"></i><a href="#" id="facebook">Telegram</a></li>
+                </ul>
+            </div>
+
+            <div class="address">
+                <h3>Office Address</h3>
+                <p>Building Ashiana,Cubbon Park,</p>
+                <p>Bengaluru,560103,</p>
+                <p>Karnatka,India</p>
+                <p>Phone No : 9876543210</p>
+            </div>
+        </div>
+
+        <div id="copyright">
+            <p>&#169 : 2020 SampleKart.com. All Rights Reserved</p>
+        </div>
+    </footer>-->
+<!-- end of footer section -->
+<footer>
+  <div class="footer-content">
+    <h3>Online Grocery Store</h3>
+    <p>At Fresh Market, we value our customers so much that we have engrained our customer service into our core values.</p>
+    <ul class="social flex">
+      <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+      <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+      <li><a href="#"><i class="fa fa-google"></i></a></li>
+      <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+    </ul>
+  </div>  
+<div class="footer-bottom">
+  <p>copyright &copy;2021 codeOpacity. designed by <span>The Believer</span></p>
+</div>
+</footer>
+</main>
+<!-- end of main -->
+
+
+<!-- details vegetables page section -->
+<div id="details-page">
+    <div class="details">
+        <div class="items-detail">
+            <div class="image-container">
+                <img src="carrot.jpg" alt="" id="details-img">
+            </div>
+            <div class="details-card">
+                <h2 id="detail-title">Vegetables</h2>
+                <h4 id="detail-price">Price : Rs 30</h4>
+                <p id="you-save">You save : 5</p>
+                <p id="delievery"><strong>Delivery : </strong> In 1 - 2 days</p>
+                <p id="spec"><strong>Specification :</strong>
+
+                    <ul>
+                        <li>Online Grocery Shopping : Choose from a wide range of grocery, baby care products, personal care products, fresh fruits & vegetables online. </li>
+
+                        <li> Buy Grocery Online, India's biggest online Supermarket for best deals & offers. Buy Staples, Snacks, Beverages, Household Essentials & Personal Care</li>
+
+                        <li> Buy Grocery Online at Best Price. Shop from Paytm Mall Mall Online Supermarket which includes Food Range, Home care.</li>
+                    </ul>
+                </p>
+                <button id="carts">Add to Cart</button>
+                <button id="buy">Back</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- end of page detail -->
+
+
+<!-- cart list section -->
+<div id="cart-container">
+    <p id="cart-title">Your <strong>Cart</strong></p id="cart-title">
+    <div id="empty-cart">
+        <h1>Your Cart is Empty...</h1>
+    </div>
+
+    <div id="cart-with-items">
+        <div class="cart-column">
+            <h3>Product</h3>
+            <h3>Product Name</h3>
+            <h3>Total </h3>
+            <h3>Quantity</h3>
+            <h3>Remove</h3>
+        </div>
+        <div id="item-body">
+        </div>
+        <div id="total">
+            <h3 id="total-items"></h3>
+            <h2 id="total-amount"></h2>
+            <h3 id="you-saved"></h3>
+
+        </div>
+        <a href="customerFrom.html">  <input type="submit" value="Continue" class="btn"></a>
+    </div>
+</div>
+
+ 
+<script src="site.js"></script>
+</body>
+</html>
